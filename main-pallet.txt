@@ -1,0 +1,3 @@
+back: #3a3336
+main: 
+second:  #FFCDB2, #FFB4A2, #E5989B, #B5838D
