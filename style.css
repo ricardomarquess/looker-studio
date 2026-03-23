@@ -17,7 +17,7 @@
 
 body {
     position: relative;
-    background: linear-gradient(135deg, #0A0A0A, #3a3336, #4C4346);
+    background: #E3CFC9;
 }
 
 .container-view {
@@ -60,15 +60,20 @@ body {
 }
 
 .title-home h1 {
+    color: #412F2E;
     font-size: 128px;
+    box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .title-home h3 {
+    color: #815E5B;
+    box-shadow: rgba(0, 0, 0, 0.3);
     margin-top: -40px;
 }
 
 .content-home {
     padding: 100px 0px;
+    color: #000000;
     font-family: var(--poppins);
 }
 
@@ -78,22 +83,24 @@ body {
     font-weight: bolder;
     border-style: none;
     border-radius: 20px;
-    background: linear-gradient(135deg, #FFCDB2, #FFB4A2, #E5989B, #B5838D);
+    background: #F8F3F2;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    outline:2px solid #e5989b3c;
+    outline:2px solid #815E5B;
     cursor: pointer;
     transition: all 0.25s ease;
 }
 
 .button-link button:hover {
+    box-shadow: inset 0px 0px 10px #815E5B;
     transform: translateY(-5px);
 }
 
 .button-link a {
+    
     text-decoration: none;
     font-family: var(--poppins);
     font-width: bold;
-    color: white;
+    color: #815E5B;
 }
 
 /* estilizando #plans */
@@ -113,7 +120,7 @@ body {
     text-align: center;
     font-family: var(--poppins);
     color: white;
-    gap: 20px;
+    gap: 60px;
 }
 
 .cards ul {
@@ -130,19 +137,20 @@ body {
 }
 
 .plans-title h1 {
+    color: #412F2E;
     font-size: 64px;
 }
 
 .plans-title p {
+    color: #815E5B;
     margin-top: -25px;
 }
 
 /* CLASSIC CARD */
 
 .card-classic {
-    background-color: #0A0A0A;
-    outline: 2px solid rgba(0, 0, 0, 0.486);
-    box-shadow: rgba(0, 0, 0, 0.3);
+    background-color: #815E5B;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
     padding: 30px 60px;
     border-radius: 20px;
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -153,10 +161,12 @@ body {
 }
 
 .card-classic h1 {
+    color: #E6D3CE;
     padding-bottom: 40px;
 }
 
 .atributes-classic {
+    color: #E6D3CE;
     padding-bottom: 40px;
     text-align: left;
 }
@@ -165,23 +175,25 @@ body {
     padding: 20px;
     border-style: none;
     border-radius: 10px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
     font-weight: bolder;
-    color: white;
-    background: #FFB4A2;
+    color: #815E5B;
+    background: #412F2E;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .button-classic:hover {
-    transform: translateY(5px);
+    transform: scale(1.01);
 }
 
 /* MAX CARD */
 
 .card-max {
-    background: linear-gradient(135deg, #FFCDB2, #FFB4A2, #E5989B, #B5838D);
-    box-shadow: rgba(0, 0, 0, 0.3);
-    outline: 1px solid rgba(255, 255, 255, 0.452);
+    background: linear-gradient(to top, #412F2E, #815E5B);
+    box-shadow: 0px 8px 30px rgba(255, 255, 255, 1);
+    outline: 1px solid rgba(255, 255, 255, 0.753);
     padding: 30px 60px;
     border-radius: 20px;
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -193,10 +205,17 @@ body {
 
 
 .card-max h1 {
+    color: #F8F3F2;
     padding-bottom: 40px;
+    font-size: 64px;
+}
+
+.card-max > .price {
+    color: #F8F3F2;
 }
 
 .atributes-max {
+    color: #F8F3F2;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -205,10 +224,13 @@ body {
     padding: 20px;
     border-style: none;
     border-radius: 10px;
+    font-family: var(--mont);
     font-weight: bolder;
-    color: white;
+    color: #815E5B;
+    outline: 1px solid #815E5B;
     background: #F8F3F2;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -220,12 +242,11 @@ body {
 /* PLUS CARD */
 
 .card-plus {
-    box-shadow: rgba(0, 0, 0, 0.3);
-    outline: 1px solid rgba(255, 255, 255, 0.452);
     padding: 30px 60px;
-    background: #0A0A0A;
-    color: #F8F3F2;
+    background: #815E5B;
+    color: white;
     border-radius: 20px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -234,10 +255,12 @@ body {
 }
 
 .card-plus h1 {
+    color: #E6D3CE;
     padding-bottom: 40px;
 }
 
 .atributes-plus {
+    color: #E6D3CE;
     padding-bottom: 40px;
     text-align: right;
 }
@@ -247,8 +270,9 @@ body {
     border-style: none;
     border-radius: 10px;
     font-weight: bolder;
-    color: #F8F3F2;
-    background: #3a3336;
+    color: #815E5B;
+    background: #412F2E;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -259,6 +283,7 @@ body {
 /* PRICE */
 
 .price {
+    color: #E6D3CE;
     padding: 10px 0px;
     font-family: var(--mont);
     font-size: 32px;
