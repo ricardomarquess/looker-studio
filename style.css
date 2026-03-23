@@ -91,16 +91,16 @@ body {
 }
 
 .button-link button:hover {
-    box-shadow: inset 0px 0px 10px #815E5B;
+    color: #412F2E;
+    background: #815E5B;
     transform: translateY(-5px);
 }
 
 .button-link a {
-    
     text-decoration: none;
     font-family: var(--poppins);
     font-width: bold;
-    color: #815E5B;
+    color: #412F2E;
 }
 
 /* estilizando #plans */
@@ -289,3 +289,8 @@ body {
     font-size: 32px;
 }
 
+/* Section: Looker Info */
+
+#lookerinfo {
+    height: 100vh;
+}
