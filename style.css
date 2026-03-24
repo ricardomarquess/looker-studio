@@ -51,7 +51,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     color: white;
 }
 
@@ -149,6 +149,8 @@ body {
 /* CLASSIC CARD */
 
 .card-classic {
+    display: flex;
+    flex-direction: column;
     background-color: #815E5B;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
     padding: 30px 60px;
@@ -191,6 +193,8 @@ body {
 /* MAX CARD */
 
 .card-max {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to top, #412F2E, #815E5B);
     box-shadow: 0px 8px 30px rgba(255, 255, 255, 1);
     outline: 1px solid rgba(255, 255, 255, 0.753);
@@ -242,6 +246,8 @@ body {
 /* PLUS CARD */
 
 .card-plus {
+    display: flex;
+    flex-direction: column;
     padding: 30px 60px;
     background: #815E5B;
     color: white;
@@ -371,7 +377,7 @@ body {
 /* Section: Login */
 
 #login {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -440,6 +446,7 @@ body {
     font-weight: bolder;
     color: #412F2E;
     outline: 1px solid #412F2E;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -449,12 +456,16 @@ body {
     transform: scale(1.05);
 }
 
-.button-link button:hover {
-}
-
 .vertical-bar {
     border: 1px solid #412F2E;
+    border-radius: 10x;
     height: 100%;
+}
+
+.horizontal-bar {
+    display: none;
+    border: 1px solid #412F2E;
+    width: 100%;
 }
 
 .alternative-login {
@@ -462,4 +473,187 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.alternative-login h3 {
+    font-family: var(--poppins);
+    color: #412F2E;
+    padding: 20px;
+}
+
+.alternative-login button {
+    display: flex;
+    gap: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: #F8F3F2;
+    font-family: var(--poppins);
+    color: #412F2E;
+    border-style: none;
+    border: 1px solid #412F2E;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.alternative-login button:hover{
+    background-color: #412F2E;
+    color: #000000;
+}
+
+.end-login {
+    padding: 20px;
+}
+
+.end-login a {
+    font-family: var(--poppins);
+    text-decoration: none;
+    color: #815E5B;
+}
+
+.end-login a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #412F2E;
+    width: 100%;
+    padding: 5px;
+}
+
+footer p {
+    font-family: var(--mont);
+    text-align: center;
+    font-weight: bolder;
+    color: #F8F3F2;
+}
+
+
+/* media queries 
+   responsive sections
+   #container-view
+   */
+
+@media (max-width: 1070px) {
+    /* #home */
+    .title-home h1 {
+        font-size: 64px;
+    }
+
+    .title-home h3 {
+        margin-top: -20px;
+    }
+
+    .content-home {
+        padding: 50px;
+    }
+
+    .button-link button {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    /* #cart */
+
+    #cart {
+        height: 170vh;
+    }
+
+    .plans-title {
+        padding: 30px;
+    }    
+
+    .plans-title h1 {
+        font-size: 32px;
+    }
+
+    .plans-title p {
+        margin-top: -12.5px;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: auto;
+    }
+
+    .card-classic {
+        height: 300px;
+        width: 600px;
+        flex-direction: flex;  
+    }
+
+    .responsive-classic {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .responsive-classic li {
+        text-align: right;
+    }
+
+    .card-classic h1 {
+        text-align: left;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .card-max {
+        height: 400px;
+        width: 600px;
+        flex-direction: flex;
+    }
+
+    .resp-max {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .resp-max li {
+        text-align: right;
+    }
+
+    .card-plus {
+        height: 400px;
+        width: 600px;
+        flex-direction: flex;
+    }
+
+    .resp-plus {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 840px) {
+    #lookerinfo{
+        height: 150vh;
+    }
+
+    .content-info {
+        flex-direction: column;
+        
+    }
+
+    .info-info {
+        display: flex;
+        justify-content: space-around;        gap: 40px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .info-info p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .image-info {
+        width: 20vw;
+    }
 }
