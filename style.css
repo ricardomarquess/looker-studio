@@ -367,3 +367,99 @@ body {
 .icon-info a:hover {
     text-decoration: underline;
 }
+
+/* Section: Login */
+
+#login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 50vw;
+    background-color: #F8F3F2;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.input-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-login {
+    font-family: var(--poppins);
+    color: #412F2E;
+    font-size: 32px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    padding: 10px;
+    border-style: none none solid none;
+    border-color: #412F2E;
+    background: transparent;
+    outline: none;
+    font-weight: 200;
+}
+
+.input-box input:hover {
+    background: rgba(196, 196, 196, 0.212);
+}
+
+.email-login {
+    padding: 10px 0px;
+}
+
+.password-login {
+    padding: 10px 0px;
+}
+
+.button-login {
+    padding-top: 10px;
+}
+
+.button-login button{
+    padding: 10px 80px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.3);
+    font-family: var(--mont);
+    font-weight: bolder;
+    color: #412F2E;
+    outline: 1px solid #412F2E;
+    transition: all 0.3s ease;
+}
+
+.button-login button:hover {
+    background-color: #412F2E;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+.button-link button:hover {
+}
+
+.vertical-bar {
+    border: 1px solid #412F2E;
+    height: 100%;
+}
+
+.alternative-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
