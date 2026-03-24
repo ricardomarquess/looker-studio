@@ -638,7 +638,6 @@ footer p {
 
     .content-info {
         flex-direction: column;
-        
     }
 
     .info-info {
@@ -654,6 +653,6 @@ footer p {
     }
 
     .image-info {
-        width: 20vw;
+        display: none;
     }
 }
